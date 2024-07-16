@@ -28,13 +28,23 @@
             bindings = <&mo 3>;
             key-positions = <37 40>;
         };
+
+        j_if {
+            bindings = <&j_if>;
+            key-positions = <41 8 19>;
+        };
+
+        j_for_classic {
+            bindings = <&j_for_classic>;
+            key-positions = <41 19 16>;
+        };
     };
 
     macros {
         j_if: j_if {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp RBKT &kp RET &kp RET &kp RBRC>;
+            bindings = <&kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LEFT_BRACE &kp RET &kp RET &kp RBRC &kp UP_ARROW &kp UP_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
             label = "J_IF";
         };
 
