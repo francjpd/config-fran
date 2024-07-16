@@ -30,6 +30,22 @@
         };
     };
 
+    macros {
+        j_if: j_if {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp RBKT &kp RET &kp RET &kp RBRC>;
+            label = "J_IF";
+        };
+
+        j_for_classic: j_for_classic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp O &kp R &kp SPACE &kp LPAR &kp L &kp E &kp T &kp SPACE &kp I &kp SPACE &kp EQUAL &kp SPACE &kp N0 &kp SPACE &kp SEMI &kp SPACE &kp I &kp SPACE &kp LT &kp SPACE &kp SEMI &kp SPACE &kp I &kp PLUS &kp PLUS &kp RPAR &kp SPACE &kp RBKT &kp RET &kp RET &kp RBRC>;
+            label = "J_FOR_CLASSIC";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
